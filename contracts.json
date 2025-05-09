@@ -1,0 +1,18 @@
+{
+    "CelebrityNFTDao": {
+        "4": {
+            "address": "0x4da1515a2b8310ba4510e96b2fb19c011d9104f1",
+            "transactionHash": "0xcf25889c06d6d70a78204004680ecb28f7d16825fe9c1ef9cee7ef7b20bd515d"
+        }
+    },
+    "OGFans": {
+        "4": {
+            "address": "0x267c08168271c37e56f5da0a94f2a615260ea140",
+            "transactionHash": "0x498628882fe19fef71a9576ab2825b563ae4b9fc60c61203d7dbd304908c778a"
+        },
+        "80001": {
+            "address": "0xAd0Af5fb3Ad130E270320ae40DC9B58BBEe4f29f",
+            "transactionHash": "0xfb7c423893822376abaf1f6048bdcc0ee07ad715421ac8ab4f3b21b9353edd9d"
+        }
+    }
+}

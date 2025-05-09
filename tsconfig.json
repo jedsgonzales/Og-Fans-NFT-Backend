@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "target": "es2020",
+      "lib": ["dom", "dom.iterable", "esnext", "ES2020", "esnext.asynciterable"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": false,
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "jsx": "react-native",
+      "outDir": "dist",
+      "sourceMap": true,
+    },
+    "include": ["src/types/missing-types.d.ts", "src/types.d.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
+    "exclude": ["node_modules", "**/__tests__/*", "dist", "lib"]
+  }
+  

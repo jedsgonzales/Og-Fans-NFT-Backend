@@ -1,0 +1,32 @@
+{
+    "auth": {
+      "require_path": "./auth/web3",
+      "enabled": true,
+      "mountPath": "/auth/web3",
+      "config": {}
+    },
+    "graphql": {
+      "require_path": "./graphql/v1",
+      "enabled": true,
+      "mountPath": "/graphql",
+      "config": {}
+    },
+    "og_profile": {
+      "require_path": "./public/og",
+      "enabled": true,
+      "mountPath": "/api/metadata/og",
+      "config": {}
+    },
+    "drop_info": {
+      "require_path": "./public/drop",
+      "enabled": true,
+      "mountPath": "/api/metadata/drop",
+      "config": {}
+    },
+    "token_metadata": {
+      "require_path": "./public/token",
+      "enabled": true,
+      "mountPath": "/api/metadata/token",
+      "config": {}
+    }
+  }

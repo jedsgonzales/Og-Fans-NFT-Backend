@@ -1,0 +1,9 @@
+node_modules/
+dist/
+lib/
+
+!src/lib/
+
+.env
+yarn-error.log
+web3-connections.json
