@@ -1,0 +1,49 @@
+import { Field, ObjectType } from "type-graphql";
+
+import { GraphQLEthereumWallet } from "@edenholdings/web3-libs";
+
+import { MetadataHistory } from "../../../../lib/dynamodb/models/index";
+
+@ObjectType('MetadataHistory')
+export class MetadataHistoryType {
+    private wrapped: MetadataHistory;
+
+    @Field(() => BigInt)
+    get tokenId() {
+        return this.wrapped.tokenId;
+    }
+
+    @Field(() => BigInt)
+    get blockNumber() {
+        return this.wrapped.blockNumber;
+    }
+
+    @Field(() => BigInt)
+    get blockTime() {
+        return this.wrapped.blockTime;
+    }
+
+    @Field(() => GraphQLEthereumWallet, { nullable: true })
+    get fromOwner() {
+        return this.wrapped.fromOwner;
+    }
+
+    @Field(() => GraphQLEthereumWallet, { nullable: true })
+    get operator() {
+        return this.wrapped.operator;
+    }
+
+    @Field(() => GraphQLEthereumWallet)
+    get toOwner() {
+        return this.wrapped.toOwner;
+    }
+
+    @Field(() => String, { nullable: true })
+    get transactionHash() {
+        return this.wrapped.transactionHash;
+    }
+
+    constructor(wrap:MetadataHistory) {
+        this.wrapped = wrap;
+    }
+}

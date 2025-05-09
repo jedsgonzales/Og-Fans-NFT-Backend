@@ -1,0 +1,27 @@
+import { GraphQLEthereumWallet } from "@edenholdings/web3-libs";
+import { Field, ObjectType } from "type-graphql";
+import { TokenOwner } from "../../dynamodb/models/user-account";
+
+@ObjectType('TokenOwner')
+export class TokenOwnerType {
+    private wrapped: TokenOwner;
+
+    @Field(() => GraphQLEthereumWallet)
+    get ethWallet(){
+        return this.wrapped.ethWallet;
+    }
+
+    @Field(() => BigInt)
+    get tokenId() {
+        return this.wrapped.tokenId;
+    }
+
+    @Field(() => String, { nullable: true })
+    get transactionHash() {
+        return this.wrapped.transactionHash;
+    }
+
+    constructor(wrap:TokenOwner) {
+        this.wrapped = wrap;
+    }
+}
